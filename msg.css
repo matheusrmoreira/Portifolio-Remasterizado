@@ -1,0 +1,159 @@
+body {
+    background-image: url('arquivos/Logo MRM em fundo azul escuro.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.logo-fixa {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 100px;
+  height: auto;
+  z-index: 1000;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.logo-fixa:hover {
+  opacity: 1;
+}
+
+main.main {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+main.main form {
+    display: flex;
+    flex-direction: column;
+    }
+
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #2563EB;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.form-buttons button:hover {
+    background-color: #2563EB;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.705);
+    margin: 0;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.configurações {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .logo-fixa {
+        width: 60px;
+    }
+    
+    .form-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+    
+    .configurações {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+.direitos {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}

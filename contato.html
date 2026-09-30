@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Moreira - Mensagem</title>
+    <link rel="icon" href="arquivos/foto principal.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="msg.css">
+</head>
+<body>
+    <img src="arquivos/Logo Meu Site (sem fundo).png" alt="Logo Math Moreira" class="logo-fixa">
+    <img src="arquivos/Logo Meu Site (sem fundo).png" alt="Logo Math Moreira" class="logo">
+    <h2>Contato</h2>
+    <h1>Matheus Rocha Moreira</h1><br>
+    <main class="main">
+        <form id="form-avaliacao">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Deixe sua mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <div class="form-buttons">
+                <button type="reset">Limpar formulário</button>
+                <button type="submit">Validar mensagem</button>
+            </div>
+        </form>
+    </main><br><br><br>
+<footer>
+        <div class="configurações">
+            <div class="email">
+                <img src="arquivos/envelope email.webp" alt="imagem email" style="width: 50px; height: auto; margin-right: 10px;">
+                <h3>E-mails:</h3>
+                <span>Profissional:</span><br>
+                <a href="mailto:contato.math.rmoreira@gmail.com">math.rmoreira@gmail.com</a><br>
+                <span>Pessoal:</span><br>
+                <a href="mailto:contato.matheus.mrm29@gmail.com">matheus.mrm29@gmail.com</a><br>
+                <span>Estudantil:</span><br>
+                    CEUB: <a href="mailto:contato.matheus.mrm29@sempreceub.com">matheus.mrm29@sempreceub.com</a><br>
+                    UNB: <a href="mailto:contato.262006181@unb.aluno.br">262006181@unb.aluno.br</a>
+            </div>
+            <div class="Telefone">
+                <img src="arquivos/imagem telefone.png" alt="imagem telefone"
+                    style="width: 50px; height: auto; margin-right: 10px; filter: invert(1);">
+                <h3>Telefones:</h3>
+                <span>Celular:</span><br>
+                <a href="tel:+5561993733731">+55 (61) 99373-3731</a><br>
+                <span>WhatsApp:</span><br>
+                <a href="tel:+5561993733731">+55 (61) 99373-3731</a><br>
+            </div>
+            <div class="Github">
+                <img src="arquivos/github img.png" alt="imagem github"
+                    style="width: 60px; height: auto; margin-right: 10px; filter: invert(1);">
+                <h3>Github:</h3>
+                <span>Conta:</span><br>
+                <a href="https://github.com/matheusrmoreira">matheusrmoreira</a>
+            </div>
+            <div class="insta">
+                <img src="arquivos/insta imagem.webp" alt="imagem insta"
+                    style="width: 60px; height: auto; margin-right: 10px; filter: brightness(0) invert(1);">
+                <h3>Instagram:</h3>
+                <span>Perfil:</span><br>
+                <a href="https://www.instagram.com/mathrmoreira/">mathrmoreira</a>
+            </div>
+            <div class="Curriculo">
+                <img src="arquivos/imagem curriculo.png" alt="imagem curriculo"
+                    style="width: 60px; height: auto; margin-right: 10px; filter: brightness(0) invert(1);">
+                <h3>Currículo:</h3>
+                <span>PDF:</span><br>
+                <a href="arquivos/Currículo Atualizado 19 08 2026.pdf">Matheus Rocha Moreira</a>
+            </div>
+        </div>
+        <div class="direitos">
+            <p>&copy; 2026 Matheus Rocha Moreira</p>
+        </div>
+</footer>
+<script>
+        document.getElementById('form-avaliacao').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Mensagem validada. Para enviá-la de verdade, é necessário configurar um servidor ou serviço de formulário.');
+            event.target.reset();
+        });
+    </script>
+</body>
+</html>

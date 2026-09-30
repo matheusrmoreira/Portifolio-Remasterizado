@@ -1,0 +1,250 @@
+body {
+    background-image: url('arquivos/Logo MRM em fundo azul escuro.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 110px 0 0;
+}
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+.logo-fixa {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 100px;
+  height: auto;
+  z-index: 1000;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.logo-fixa:hover {
+  opacity: 1;
+}
+
+.menu {
+  position: fixed;
+    top: 0;
+  left: 0;
+  width: 100%;
+    z-index: 1000;
+    background-color: #000000c7;
+    padding: 15px 0;
+    margin: 0;
+    border-bottom: 2px solid #ffffff;
+    transition: all 0.4s ease;
+  }
+  
+  .menu-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .menu a {
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #2563EB;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #ffffff;
+    background-color: #2563EB;
+  }
+  
+  /* Esconde o botão da setinha no computador */
+  #btn-toggle-menu {
+    display: none;
+  }
+
+  section {
+    scroll-margin-top: 190px;
+    padding: 0 15px;
+  }
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.sobremim {
+    text-align: justify;
+    padding: 20px 1%;
+
+}
+
+.galeriafotos {
+  width: 100%;
+  overflow: hidden;
+    padding: 1%;
+}
+
+.galeria-track {
+  display: flex;
+  width: max-content;
+  animation: passar-galeria 30s linear infinite;
+}
+
+.galeria-grupo {
+  display: flex;
+  flex-shrink: 0;
+  gap: 15px;
+  padding-right: 15px;
+}
+
+.galeria-grupo img {
+  flex: 0 0 180px;
+    height: 170px;
+    opacity: 0.8;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.galeria-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes passar-galeria {
+  from {
+    transform: translateX(calc(-50% - 7.5px));
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.tiraborda {
+    padding: 0px 1%;
+}
+
+.justificar {
+    text-align: justify;
+    padding: 0px 1%;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.705);
+    margin: 0;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.configurações {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+      padding-top: 150px;
+    }
+
+    section {
+      scroll-margin-top: 260px;
+    }
+  
+    .menu a {
+      font-size: 16px;
+      padding: 8px 12px;
+    }
+  
+    .logo-fixa {
+      width: 60px;
+    }
+  
+    section p, li {
+      font-size: 16px;
+    }
+  
+    #btn-toggle-menu {
+      display: block;
+      margin: 10px auto 0 auto;
+      background-color: #2563EB;
+      color: white;
+      border: none;
+      padding: 5px 25px;
+      font-size: 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .menu.recolhido {
+      padding: 5px 0;
+    }
+  
+    .menu.recolhido .menu-links {
+      display: none;
+    }
+  
+    .menu.recolhido #btn-toggle-menu {
+      margin-top: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    .galeria-track {
+      animation: none;
+    }
+  }
+
+.direitos {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
